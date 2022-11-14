@@ -5,27 +5,44 @@ body {
     margin: 10px;
 }
 
+header {
+    font-family: "American Typewriter", sans-serif;
+    font-size: 30px;
+}
+
+
 #globe-picture {
     width: 500px
 }
 
 #search-field {
-    width: 300px;
+    width: 200px;
     margin-right: -6px;
-
 }
-
 
 #search-button {
     font-family: "American Typewriter", sans-serif;
+    height: 50px;
+    width: 200px;
+    background-color: darkkhaki;
+    border-radius: 30px;
+    margin-top: 20px;
+
 }
 
-#button {
-    width: 80px;
-    margin-left: 0;
-    padding-left: -1px;
+.list-items{
+    list-style-type: none;
 }
 
-h1 {
+.country-name{
+    font-size: 30px;
     font-family: "American Typewriter", sans-serif;
+
+}
+
+
+.text-one, .text-two {
+    font-size: 20px;
+    font-family: "American Typewriter", sans-serif;
+    font-weight: lighter;
 }
