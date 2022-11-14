@@ -3,46 +3,67 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    background: rgb(0, 7, 36);
+    background: linear-gradient(90deg, rgba(0, 7, 36, 1) 0%, rgba(34, 46, 130, 1) 74%, rgba(33, 45, 126, 1) 100%, rgba(0, 212, 255, 1) 100%);
 }
 
 header {
     font-family: "American Typewriter", sans-serif;
-    font-size: 30px;
+    font-size: 40px;
+    color: beige;
+    margin-top: 50px;
 }
-
 
 #globe-picture {
     width: 500px
 }
 
 #search-field {
-    width: 200px;
-    margin-right: -6px;
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "American Typewriter", sans-serif;
+    border-radius: 10px;
 }
 
 #search-button {
     font-family: "American Typewriter", sans-serif;
+    font-size: 15px;
     height: 50px;
     width: 200px;
-    background-color: darkkhaki;
-    border-radius: 30px;
+    background-color: mediumturquoise;
+    border-radius: 20px;
     margin-top: 20px;
+    margin-bottom: 50px;
 
 }
 
-.list-items{
+#globe-picture {
+
+    width: 300px;
+    padding: 50px;
+}
+
+.img-size {
+    width: 100px;
+}
+
+.list-items {
     list-style-type: none;
 }
 
-.country-name{
-    font-size: 30px;
+.country-name {
+    font-size: 20px;
+    font-weight: bold;
     font-family: "American Typewriter", sans-serif;
+    color: darkturquoise;
 
 }
 
 
 .text-one, .text-two {
-    font-size: 20px;
+    font-size: 15px;
     font-family: "American Typewriter", sans-serif;
     font-weight: lighter;
+    color: darkturquoise;
 }
