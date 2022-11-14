@@ -2,20 +2,18 @@ import axios from 'axios';
 
 console.log("Hallo daar");
 
-/*
-const localCurrency = (currencies) => {
-    let local = "";
+const countryCurrency = (currencies) => {
+    let localC = "";
     for (let i = 0; i < currencies.length; i++) {
         if (i > 0) {
-            local += ' and ' + localCurrency[i].name + 's. ';
+            localC += ' and ' + currencies[i].name + 's. ';
         } else {
-            local = localCurrency[i].name;
+            localC = currencies[i].name;
         }
     }
-    console.log(local);
-    return local;
+    console.log(localC);
+    return localC
 }
-*/
 
 
 async function getCountryInformation() {
@@ -38,7 +36,7 @@ async function getCountryInformation() {
                 <img src="${country.flags.png}" alt="${country.flag}" class="img-size"/>
 </div>
 <h6 class="text-one">${country.name} is situated in ${country.region}. It has a population of ${country.population}</h6>
-<h6 class="text-two"> The capital city is ${country.capital}.</h6>
+<h6 class="text-two"> The capital city is ${country.capital} and you can pay with ${countryCurrency(country.currencies)}.</h6>
 </li>`
         )
 
