@@ -29,7 +29,7 @@ async function getCountryInformation() {
         let countryOutput = response.data
 
         const listOfCountries = document.getElementById('country-list')
-        countryOutput.map((country) =>
+        countryOutput.map(({ name, population, currencies, capital, region, flag: { png } }) =>
             listOfCountries.innerHTML = `<li class="list-items">
              <div class= "flag-item">
                 <h3 class = "country-name">${country.name}</h3>
