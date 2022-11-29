@@ -17,8 +17,8 @@ const countryCurrency = (currencies) => {
 
 
 async function getCountryInformation() {
-    const BASE = "https://restcountries.com/";
-    const ENDPOINT = "v2/name/";
+    const base = "https://restcountries.com/";
+    const endpoint = "v2/name/";
 
     const searchField = document.getElementById('search-field');
     const searchFieldOutput = searchField.value
